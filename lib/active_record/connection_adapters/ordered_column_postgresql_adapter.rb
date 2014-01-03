@@ -11,8 +11,8 @@ module ActiveRecord
     class OrderedColumnPostgreSQLAdapterWrapper < Delegator
       attr_reader :postgresql_connection
 
-      def columns(table_name, name = nil)
-        postgresql_connection.columns(table_name, name).sort { |x,y| x.name <=> y.name }
+      def columns(table_name)
+        postgresql_connection.columns(table_name).sort { |x,y| x.name <=> y.name }
       end
 
       def __getobj__
