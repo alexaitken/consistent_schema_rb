@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["alex@alexaitken.com"]
   spec.description   = "Orders columns from the active record adapters so the schema dumper will produce a consistent schema.rb"
   spec.summary       = "Orders columns from the active record adapters so the schema dumper will produce a consistent schema.rb"
-  spec.homepage      = "http://github.com/alexaitken/consisten_schema_rb"
+  spec.homepage      = "http://github.com/alexaitken/consistent_schema_rb"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
